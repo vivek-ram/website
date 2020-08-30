@@ -1,0 +1,89 @@
+*
+{
+	margin : 0;
+	padding: 0;
+}
+
+#particles-js{
+	background-color: black;
+	height: 100vh;
+}
+
+
+
+
+#blog{
+	position: absolute;
+	left: 35%;
+	top: 45%;
+	animation: fadein 3s;
+}
+
+#content{
+	background-color: #5c5c5c;
+	color: black;
+	font-size: 30px;
+	width: 110%;
+	text-align: center;
+	font-family: "Times New Roman", Times, serif;
+}
+
+#content:hover{
+	color:black;
+	background-color: grey;
+	transition-duration: .8s;
+	cursor: pointer;
+}
+
+#portfolio{
+	position: absolute;
+	right: 35%;
+	top: 45%;
+	animation: fadein 3s;
+}
+#portfolio p{
+}
+
+#line{
+	border-left: 2px solid #b3b3b3;
+	height: 20%;
+	position: absolute;
+	left: 48%;
+	top: 40%;
+	transform: rotate(0.55turn);
+	animation: long 2s;
+	animation-timing-function: ease-in-out;
+	}
+
+.cards{
+	position: absolute;
+	top: 11%;
+	left: 23%;
+}
+
+.card{
+	display: inline;
+	list-style-type: none;
+}
+
+.item{
+	text-align: center;
+	opacity: 0%;
+	margin: 3em;
+	padding: 0.5em;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 30px;
+	animation: fadein 3s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes long{
+	from {height: 0px; top: 50%;}
+	to {height: 20%; top: 40;}
+}
+
+@keyframes fadein{
+	from {opacity: 0%;}
+	to {opacity: 100%;}
+}

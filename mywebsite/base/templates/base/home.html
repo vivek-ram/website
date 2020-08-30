@@ -1,0 +1,165 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vivek</title>
+	<meta charset="utf-8">
+	<meta name="viewpoint" content="width=device-width, initial-scale = 1.0">
+ 	<link href="{% static '/css/main.css'%}" rel="stylesheet" type="text/css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+<script src= "{% static '/js/script.js' %}"> </script>
+
+<div class="row">
+  <div class="column">
+    <div class="card1">
+			<img id = "profile-pic"  src="{% static '/images/pro.jpg' %}">
+			<hr>
+			<h4> Hi I'm VIVEK </h4>
+
+			<ul class="social-links">
+				<a href="https://github.com/vivek-ram" target="_blank">
+				 <li><i class="fab fa-github" id="fab"></i></li>
+			 </a>
+				 <li><i class="fab fa-skype" id="fab"></i></li>
+				 <a href="https://www.linkedin.com/in/vvd-ram" target="_blank">
+				 <li><i class="fab fa-linkedin-in" id="fab"></i></li>
+			 </a>
+
+				 <a href="mailto:viveksivaram00@gmail.com" target="_blank">
+
+				 <li><i class="fab fa-google" id="fab"></i></li>
+				 </a>
+			</ul>
+
+    </div>
+  </div>
+
+   <div class="column">
+    <div class="card2">
+      <h3>Introduction</h3>
+			<hr>
+			<p>Hi I'm vivek studying in university of birmingham major in BSc Computer science and Artificial Intelligence (expected graduate 2021) </p>
+			<hr>
+			<h4> Related coursework </h4>
+			<p>Artificial Intelligence</p>
+			<p>Data Structure and Algorithms </p>
+			<p>programming in java </p>
+			<p> System programming C/C++</p>
+    </div>
+  </div>
+</div>
+
+<h4>Projects</h4>
+<hr>
+
+
+<div Class  = "probox">
+	<div class= "card">
+		<div class = "imgBX" data-text = "Flappy bird using ai">
+			<img src = "{% static '/images/flap.png' %}">
+		</div>
+		<div class="content">
+			<div>
+				 <h3> Flappy bird using ai </h3>
+				 <p>Implemented Flappy bird game using pygame.
+					 Selected the birds which satisfy the fitness value.
+				 Executed the NEAT algorithm to train a neural network.
+			 </p>
+			 <a href="https://github.com/vivek-ram/Flappy-Bird-Using-Artificial-Intelligence" target="_blank">Read More </a>
+		 </div>
+	 </div>
+ </div>
+
+ <div class= "card">
+	 <div class = "imgBX" data-text = "Maze solving Bot">
+		 <img src = "{% static '/images/bot.png' %}">
+	 </div>
+	 <div class="content">
+		 <div>
+				<h3> Maze solving Bot </h3>
+				<p>
+					Programmed a robot to solve the maze using Java.
+					Implemented AI search algorithms(BFS , DFS) for finding the shortest path.
+					Displayed the Maze map on the computer screen using java GUI.
+			</p>
+			<a href="https://github.com/vivek-ram/Maze-Navigation-and-Path-finding-Robot" target="_blank" >Read More </a>
+		</div>
+	</div>
+</div>
+
+
+<div class= "card">
+	<div class = "imgBX" data-text = "Bitcoin price tracker app">
+		<img src = "{% static '/images/bit.png' %}">
+	</div>
+	<div class="content">
+		<div>
+			 <h3> Bitcoin price tracker app </h3>
+			 <p>
+				Created an App Accessing API and making the network calls.
+				Parsing the JSON Data and Updating the User Interface.
+		 </p>
+		 <a href="https://github.com/vivek-ram/Bitcoin-price-tracker" target="_blank" >Read More </a>
+	 </div>
+ </div>
+</div>
+
+<div class= "card">
+ <div class = "imgBX" data-text = "live sketch">
+	 <img src = "{% static '/images/sketch.png' %}">
+ </div>
+ <div class="content">
+	 <div>
+			<h3>live sketch </h3>
+			<p>
+			 Created a Python application.
+			 Used OpenCV for getting imagine from webcam converting it to sketch.
+			 Converted image to grayscale and extract edges and do an invert to binarize the image to sketch.
+		</p>
+		<a href="https://github.com/vivek-ram/Live-Sketch" target="_blank">Read More </a>
+	</div>
+</div>
+</div>
+
+
+
+</div>
+
+<hr>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+			<h3>Skills</h3>
+			<hr>
+			<p>Programming Languages :Java,C,C++, Python , Swift, Haskell. </p>
+			 <p> Test FrameWork : JUNIT. </p>
+			 <p>  Version Control : GitHub, GitLab. </p>
+			 <p>  Languages : English, Telugu , Hindi </p>
+    </div>
+  </div>
+
+	<div class="column">
+    <div class="card">
+			<h3>Achievements</h3>
+			<hr>
+
+
+			<h3> 1 ) University of Birmingham Outstanding Achievement Scholarship </h3>
+			<br>
+			<h3> 2 ) Scholarship from School of Computer Science </h3>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
